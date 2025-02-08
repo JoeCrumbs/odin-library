@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/style.css" rel="stylesheet">
+    <title>Library</title>
+</head>
+
+<body>
+    <div id='popdiv'></div>
+    <header>
+        <div>
+            <h1> My Library </h1>
+            <button id='new-book'>add Book</button>
+        </div>
+    </header>
+    <main>
+        <div class="form-popup" id="bookForm">
+            <form class="form-container">
+              <h2>Add new Book</h2>
+          
+              <label for="title"><b>Title</b></label>
+              <input type="text" placeholder="Enter title" name="title" id="title">
+          
+              <label for="author"><b>Author</b></label>
+              <input type="text" placeholder="Enter author" name="author" id="author">
+
+              <label for="pages"><b>How many pages?</b></label>
+              <input type="number" id="pages" name="pages" min="1">
+    
+              <div class="toggle-container__element">
+                <label class="toggle" for="read">
+                    <input id="read" type="checkbox" name="read"></input>
+                    <span class="toggle-switch"></span>
+                </label>
+                <p><b>Completed?</b></p>
+            </div>
+          
+              <button type="submit" id="add-book">add</button>
+              <button type="submit" class="cancel">cancel</button>
+            </form>
+        </div>
+        <ul id="book-table"></ul>
+    </main>
+    <script src="library.js"></script>
+</body>
+</html>
